@@ -1,0 +1,425 @@
+/* Reset */
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  background: #000;
+}
+
+.content {
+  height: 100vh;
+  overflow: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+.post>h1, .post>h2, .post>h3, .post>h4{
+  padding-top: 1em;
+  text-decoration: underline;
+  text-decoration-color: #ffca00;
+  font-family: 'Inconsolata', monospace;
+}
+/* Dead Simple Grid (c) 2015 Vladimir Agafonkin */
+
+.row .row {
+  margin: 0 -1.5em;
+}
+
+.col {
+  padding: 0 1.5em;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen {
+  .col {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  margin-left: 8em;
+}
+
+/* Important Responsiveness */
+
+/* .container {
+    max-width: 90em;
+    margin:0 auto;
+} */
+
+/* You only need width to set up columns; all columns are 100%-width by default, so we start
+from a one-column mobile layout and gradually improve it according to available screen space */
+
+/*
+@media only screen and (min-width: 34em) {
+    .feature, .info { width: 50%; }
+}
+
+@media only screen and (min-width: 54em) {
+    .content { width: 70.83%; }
+    .sidebar { width: 29.17%; }
+    .info    { width: 100%;   }
+}
+
+@media only screen and (min-width: 76em) {
+    .content { width: 70.83%; }
+    .sidebar { width: 29.17%; }
+    .info    { width: 50%;  }
+}
+*/
+
+/* Custom Styles */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Inconsolata', monospace;
+
+}
+body, button, input, select, textarea {
+  color: #fff;
+  font-family: 'Inconsolata', monospace;
+}
+
+p, ul {
+  line-height: 1.5;
+}
+
+/* Fix Image Overflowing if size is too big */
+
+img {
+  max-width: 100%;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: #ffca00;
+}
+
+a:hover {
+  color: #ffca00;
+}
+
+/* Header */
+
+.nav a {
+  color: #000;
+  font-size: 1.1em;
+}
+
+.nav ul, .nav ul li {
+  display: block;
+  list-style: none;
+}
+
+.nav {
+  background: #ffca00;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8em;
+  height: 100%;
+}
+
+.nav span>a {}
+
+.nav ul li:first-of-type {
+  margin-bottom: 1em;
+}
+
+.large-text {
+  font-size: 1.9em;
+}
+
+.slogan {
+  font-size: medium;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  background-color: #dfb412;
+  font-size: 13px;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  color: #000;
+}
+
+.read-more {
+  padding: 0em 0em .6em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .9em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1em;
+}
+.title h1{
+      margin-bottom: .3em;
+}
+#contactform input, textarea {
+  color: #fff;
+  background: #585858;
+  border: none;
+  padding: 1em;
+  margin-top: 1em;
+  width: 100%;
+}
+
+#contactform textarea {
+  height: 20em;
+}
+
+#contactform input::placeholder, textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1;
+  /* Firefox */
+}
+
+#contactform {
+  max-width: 400px;
+}
+
+#contactform button {
+  padding: 1em;
+  background: #ffca00;
+  border: none;
+  margin-top: 1em;
+  width: 10em;
+  font-size: 0.9em;
+}
+
+/* hr style after each post */
+
+hr.end-post-hr {
+  height: 1px;
+  background: #2a2a2a;
+  border: none;
+}
+
+/* Syntax Highlighting */
+
+code, pre {
+  font-family: Terminal, monospace;
+  background-color: rgb(34, 34, 34);
+  overflow-x: auto;
+}
+
+code {
+  border: 0;
+  margin: 0;
+  color: #909090;
+}
+
+pre code {
+  font-weight: normal !important;
+  overflow-x: auto;
+}
+
+/* Meta information - home.php */
+
+.timestamp, .meta {
+  font-size: 0.9em;
+  color: #787878;
+  font-weight: bold;
+}
+/* Pagination */
+
+.pagination {
+  list-style-type: none;
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.previous, .next {
+  text-transform: uppercase;
+}
+.tags {
+  font-size: .7em;
+  padding-bottom: 8px;
+  color: #787878;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.tag-list {
+  font-weight: bold;
+}
+
+/* Blockquotes */
+
+blockquote {
+  border-left: 4px solid #6a7e95;
+  padding: 5px 5px 5px 20px;
+}
+
+/* Tables */
+
+table {
+  display: table;
+  width: 100%;
+  border-width: 0px;
+  border-collapse: collapse;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+table thead tr td {
+  font-weight: normal;
+  border-bottom: 2px solid #d1e1e8;
+  background-color: #f6f8fa;
+}
+
+table tr td {
+  border-bottom: 1px solid #d1e1e8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Plugins */
+
+.plugin-tags {
+  font-size: 0.98em;
+  /* Equal to body font-size */
+}
+
+.plugin-tags li {
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+.plugin>h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.plugin ul {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+.plugin li {
+  padding: 0 !important;
+}
+
+.plugin-pages ul.children {
+  margin: 0 0 0 10px;
+}
+
+/* Search Box */
+
+.form-control {
+  width: 75%;
+  padding: 8px 10px;
+  margin: 15px 0 5px 0;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  outline: none;
+}
+
+.form-control:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Cover Images */
+
+.featured {
+  /* Add custom CSS here if required. */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #585858;
+  border: 0px none #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 202, 0, 0.48);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #ffca00;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+  }
+  .nav ul, .nav ul li {
+    display: inline;
+    list-style: none;
+  }
+  .nav ul {
+    padding: 1em;
+  }
+  .nav ul li:first-of-type {
+    margin-right: 1em;
+  }
+  .nav {
+    background: #ffca00;
+    position: unset;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: unset;
+  }
+  .container {
+    margin-left: 0;
+  }
+  #contactform {
+    max-width: 300px;
+  }
+}
